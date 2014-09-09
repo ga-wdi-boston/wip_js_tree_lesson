@@ -1,4 +1,4 @@
-var BinTree = require("../binary_tree.js")
+var BinTree = require("../binary_tree.js");
 
 describe("BinTree", function(){
 
@@ -14,7 +14,7 @@ describe("BinTree", function(){
 
     it("right", function(){
       expect(binTree.hasOwnProperty("right")).toBe(true);
-    })
+    });
   });
 
   describe("has constructor defaults", function(){
@@ -26,7 +26,7 @@ describe("BinTree", function(){
 
     it("set right to null", function(){
       expect(binTree.right).toBe(null);
-    })
+    });
   });
 
   describe("prototype has method", function(){
@@ -62,12 +62,12 @@ describe("BinTree", function(){
 
     it("#isLeaf", function(){
       expect(binTree.hasOwnProperty("isLeaf")).toBe(true);
-    });    
+    });
 
   });
 
   describe("#insert", function(){
-    var binTree 
+    var binTree;
 
     beforeEach(function(){
       binTree = new BinTree(5);
@@ -91,7 +91,7 @@ describe("BinTree", function(){
 
   });
 
-  describe("#search", function(){ 
+  describe("#search", function(){
     var binTree = new BinTree(5);
     binTree.insert(3)
         .insert(1).insert(2).insert(6)
@@ -109,7 +109,7 @@ describe("BinTree", function(){
     });
   });
 
-  describe("#max", function(){ 
+  describe("#max", function(){
     var binTree;
 
     beforeEach(function(){
@@ -127,9 +127,9 @@ describe("BinTree", function(){
       expect(binTree.max()).toBe(binTree.value);
     });
 
-  });  
+  });
 
-  describe("#min", function(){ 
+  describe("#min", function(){
     var binTree;
 
     beforeEach(function(){
@@ -148,7 +148,7 @@ describe("BinTree", function(){
     });
 
   });
-  describe("#sortedArray", function(){ 
+  describe("#sortedArray", function(){
     var binTree;
 
     beforeEach(function(){
@@ -163,7 +163,7 @@ describe("BinTree", function(){
     });
 
   });
-  describe("#height", function(){ 
+  describe("#height", function(){
     var binTree;
 
     beforeEach(function(){
@@ -181,4 +181,4 @@ describe("BinTree", function(){
     });
 
   });
-})
+});
